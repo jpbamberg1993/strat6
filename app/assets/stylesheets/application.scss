@@ -3,6 +3,33 @@
 @import 'base/grid-settings.scss';
 @import 'neat/neat.scss';
 @import 'base/base.scss';
+@import 'layout.scss';
+
+// tower learn page
+.row-wrapper {
+	display: block; }
+	.row-wrapper::after {
+		clear: both;
+		content: "";
+		display: table; }
+	.row-wrapper .outer-container {
+		max-width: 60em;
+		margin-left: auto;
+		margin-right: auto; }
+		.row-wrapper .outer-container::after {
+			clear: both;
+			content: "";
+			display: table; }
+
+article.teaser--top {
+	float: left;
+	display: block;
+	margin-right: 4.56432%;
+	width: 65.14523%;
+	margin-left: 17.42739%; }
+	article.teaser--top:last-child {
+		margin-right: 0; }
+
 
 // "under construction page"
 // body {
@@ -66,14 +93,6 @@
 // 		@include span-columns(12 of 12);
 // 	}
 // }
-
-// tower learn
-
-
-
-
-
-
 
 
 

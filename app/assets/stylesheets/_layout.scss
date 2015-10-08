@@ -1,0 +1,25 @@
+.row-wrapper {
+	@include row();
+
+	&:nth-child(odd) {
+		background: $row-background;
+	}
+
+	.outer-container {
+		@include outer-container;
+	}
+}
+
+article.teaser--top {
+	@include span-columns(8);
+	@include shift(2);
+
+	margin-top: 88px;
+	margin-bottom:79px;
+
+	& .teaser-image {
+		@include size($teaser-image-size);
+		@include retina-image('', $teaser-image-size);
+		margin-bottom: 18px;
+	}
+}
