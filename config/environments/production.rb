@@ -1,9 +1,11 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
-  config.serve_static_assets = true
-  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
-  config.assets.compile = true
+  # config.serve_static_assets = true
+  # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
+  # config.assets.compile = true
+
+  config.assets.precompile += %w( .svg .eot .woff .ttf .png .jpg .gif)
 
   # Code is not reloaded between requests.
   config.cache_classes = true
