@@ -1,5 +1,5 @@
 fieldset {
-  background-color: $secondary-background-color;
+  background-color: lighten($base-border-color, 10%);
   border: $base-border;
   margin: 0 0 $small-spacing;
   padding: $base-spacing;
@@ -27,7 +27,8 @@ label {
 }
 
 #{$all-text-inputs},
-select[multiple=multiple] {
+select[multiple=multiple],
+textarea {
   background-color: $base-background-color;
   border: $base-border;
   border-radius: $base-border-radius;
@@ -35,13 +36,13 @@ select[multiple=multiple] {
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  margin-bottom: $small-spacing;
+  margin-bottom: $base-spacing / 2;
   padding: $base-spacing / 3;
-  transition: border-color $base-duration $base-timing;
+  transition: border-color;
   width: 100%;
 
   &:hover {
-    border-color: shade($base-border-color, 20%);
+    border-color: darken($base-border-color, 20%);
   }
 
   &:focus {
@@ -65,7 +66,7 @@ textarea {
 }
 
 input[type="search"] {
-  appearance: none;
+  @include appearance(none);
 }
 
 input[type="checkbox"],
@@ -79,7 +80,7 @@ input[type="radio"] {
 }
 
 input[type="file"] {
-  margin-bottom: $small-spacing;
+  padding-bottom: $small-spacing;
   width: 100%;
 }
 
