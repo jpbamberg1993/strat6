@@ -1,108 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Trending Virtual</title>
+<head>
+  <title>Trending Virtual</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
-    
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-
-
-  <body>
-
-    <div class="row-wrapper">
-      <div class="outer-container">
-        <header>
-          <div id="logo">
-						<%= image_tag "logo.png", id:"logo" %>
-          </div>
-          <nav>
-            <a href="#">Blog</a>
-            <a href="#">Tutorial</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui" />
   
-    <div class="row-wrapper">
-      <div class="outer-container">
-        <article class="teaser--top">
-          <div class="meta">Mar 10, 2015 by Kenny The Perraulty</div>
-          <h1>Big Boss Man</h1>
-          <div class="teaser-image"></div>
-          <p class="teaser-content">Secondly: People ashore have indeed some indefinite idea that a whale is an enormous creature of enormous power; but I have ever found that when narrating to them some specific example of this two-fold enormousness, they have significantly complimented me upon my facetiousness; when, I declare upon my soul, I had no more idea of being facetious than Moses, when he wrote the history of the plagues of Egypt.</p>
-          <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
-        </article>
-      </div>
-    </div>
-    
-    <div class="row-wrapper">
-      <div class="outer-container">
-        <section id="recent-posts">
-          <article class="teaser--recent">
-            <div class="meta">Feb 25, 2015 by Kenny The Perraulty</div>
-            <h2>The Wizard of Oz</h2>
-            <p class="teaser-content">So the Scarecrow climbed farther up and sat down on the top of the wall, and Dorothy put her head over and cried, "Oh, my!" just as the Scarecrow had done.</p>
-            <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
-          </article>
-      
-          <article class="teaser--recent">
-            <div class="meta">Jan 19, 2015 by Kenny The Perraulty</div>
-            <h2>The Princess of Mars</h2>
-            <p class="teaser-content">"She is dead," he answered. "This much was learned from a green warrior recently captured by our forces in the south. She escaped from the hordes of Thark with a strange creature of another world, only to fall into the hands of the Warhoons. Their thoats were found wandering upon the sea bottom and evidences of a bloody conflict were discovered nearby."</p>
-            <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
-          </article>
-      
-          <article class="teaser--recent">
-            <div class="meta">Dec 9, 2014 by Kenny The Perraulty</div>
-            <h2>Lewis Carroll</h2>
-            <p class="teaser-content">The Dormouse shook its head impatiently, and said, without opening its eyes, 'Of course, of course; just what I was going to remark myself.'</p>
-            <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
-          </article>
-      
-          <article class="teaser--recent">
-            <div class="meta">Nov 17, 2014 by Kenny The Perraulty</div>
-            <h2>The Scarlet Plague</h2>
-            <p class="teaser-content">She lay on the floor, a bundle of notebooks under her head. And we could do nothing. The coldness and the numbness crept up past her hips to her heart, and when it reached her heart she was dead. In fifteen minutes, by the clock—I timed it—she was dead, there, in my own classroom, dead. And she was a very beautiful, strong, healthy young woman.</p>
-            <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
-          </article>
-        </section>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-        <section id="subscribe">
-          <div class="note">
-            <h3>Don't miss what comes NEXT!</h3>
-            <p>Follow us on <a href="http://www.twitter.com/">Twitter</a> or subscribe via <a href="#">our list</a>.</p>
-          </div>
-          <div class="follow">
-            <a href="#" class="button button--twitter"></a>
-            <a href="#" class="button button--rss">Subscribe</a>
-          </div>
-        </section>
+
+<body>
+
+<!-- New Navigation
+************************************************** -->
+
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+        <li class="nav-link more"><a href="javascript:void(0)">More</a>
+          <ul class="submenu">
+            <li><a href="javascript:void(0)">Submenu Item</a></li>
+            <li><a href="javascript:void(0)">Another Item</a></li>
+            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                <li><a href="javascript:void(0)">Another Item</a></li>
+              </ul>
+            </li>
+            <li class="more"><a href="javascript:void(0)">Another submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                <li><a href="javascript:void(0)">An Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- Search Bar
+    <div class="navigation-tools">
+      <div class="search-bar">
+        <form role="search">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+          </button>
+        </form>
       </div>
-    </div>
-    
-    <div class="row-wrapper">
-      <div class="outer-container">
-        <section id="about">
-          <h5>About Us</h5>
-          <h3>Trending Virtual</h3>
-          <div class="tower-icon"></div>
-          <p>Whether the flitting attendance of the one still and solitary jet had gradually worked upon Ahab, so that he was now prepared to connect the ideas of mildness and repose with the first sight of the particular whale he pursued; however this was, or whether his eagerness betrayed him; whichever way it might have been, no sooner did he distinctly perceive the white mass, than with a quick intensity he instantly gave orders for lowering.</p>
-            <a class="button button--try" href="#">Try it 30 days for free</a>
-          </p>
-        </section>
+    </div> -->
+  </div>
+</header>
+
+<!-- New Nave COMBO
+************************************************** -->
+<div class="row-wrapper">
+  <div class="outer-container">
+    <header>
+      <div id="logo">
+        <%#= image_tag "logo.png", id:"logo" %>
       </div>
-    </div>
-    
-    <div class="row-wrapper">
-      <div class="outer-container">
-        <footer>&copy; 2015 <a href="#">Trending Virtual</a></footer>
+      <nav>
+        <a href="#">Blog</a>
+        <a href="#">Tutorial</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+  </div>
+</div>
+
+<!-- Old nav
+**************************************************
+<div class="row-wrapper">
+  <div class="outer-container">
+    <header>
+      <div id="logo">
+				<%#= image_tag "logo.png", id:"logo" %>
       </div>
-    </div>
-    
-  </body>
+      <nav>
+        <a href="#">Blog</a>
+        <a href="#">Tutorial</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+  </div>
+</div> -->
+
+<!-- Main Content
+************************************************** -->
+
+<!-- Headline Blog -->
+<div class="row-wrapper">
+  <div class="outer-container">
+    <article class="teaser--top">
+      <div class="meta">Mar 10, 2015 by Kenny The Perraulty</div>
+      <h1>Big Boss Man</h1>
+      <div class="teaser-image"></div>
+      <p class="teaser-content">Secondly: People ashore have indeed some indefinite idea that a whale is an enormous creature of enormous power; but I have ever found that when narrating to them some specific example of this two-fold enormousness, they have significantly complimented me upon my facetiousness; when, I declare upon my soul, I had no more idea of being facetious than Moses, when he wrote the history of the plagues of Egypt.</p>
+      <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
+    </article>
+  </div>
+</div>
+
+<!-- Previous Blogs -->
+<div class="row-wrapper">
+  <div class="outer-container">
+    <section id="recent-posts">
+      <article class="teaser--recent">
+        <div class="meta">Feb 25, 2015 by Kenny The Perraulty</div>
+        <h2>The Wizard of Oz</h2>
+        <p class="teaser-content">So the Scarecrow climbed farther up and sat down on the top of the wall, and Dorothy put her head over and cried, "Oh, my!" just as the Scarecrow had done.</p>
+        <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
+      </article>
+  
+      <article class="teaser--recent">
+        <div class="meta">Jan 19, 2015 by Kenny The Perraulty</div>
+        <h2>The Princess of Mars</h2>
+        <p class="teaser-content">"She is dead," he answered. "This much was learned from a green warrior recently captured by our forces in the south. She escaped from the hordes of Thark with a strange creature of another world, only to fall into the hands of the Warhoons. Their thoats were found wandering upon the sea bottom and evidences of a bloody conflict were discovered nearby."</p>
+        <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
+      </article>
+  
+      <article class="teaser--recent">
+        <div class="meta">Dec 9, 2014 by Kenny The Perraulty</div>
+        <h2>Lewis Carroll</h2>
+        <p class="teaser-content">The Dormouse shook its head impatiently, and said, without opening its eyes, 'Of course, of course; just what I was going to remark myself.'</p>
+        <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
+      </article>
+  
+      <article class="teaser--recent">
+        <div class="meta">Nov 17, 2014 by Kenny The Perraulty</div>
+        <h2>The Scarlet Plague</h2>
+        <p class="teaser-content">She lay on the floor, a bundle of notebooks under her head. And we could do nothing. The coldness and the numbness crept up past her hips to her heart, and when it reached her heart she was dead. In fifteen minutes, by the clock—I timed it—she was dead, there, in my own classroom, dead. And she was a very beautiful, strong, healthy young woman.</p>
+        <p class="continue-reading"><a href="detail-view.html">Continue Reading</a></p>
+      </article>
+    </section>
+
+    <section id="subscribe">
+      <div class="note">
+        <h3>Don't miss what comes NEXT!</h3>
+        <p>Follow us on <a href="http://www.twitter.com/">Twitter</a> or subscribe via <a href="#">our list</a>.</p>
+      </div>
+      <div class="follow">
+        <a href="#" class="button button--twitter"></a>
+        <a href="#" class="button button--rss">Subscribe</a>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- About Us -->
+<div class="row-wrapper">
+  <div class="outer-container">
+    <section id="about">
+      <h5>About Us</h5>
+      <h3>Trending Virtual</h3>
+      <div class="tower-icon"></div>
+      <p>Whether the flitting attendance of the one still and solitary jet had gradually worked upon Ahab, so that he was now prepared to connect the ideas of mildness and repose with the first sight of the particular whale he pursued; however this was, or whether his eagerness betrayed him; whichever way it might have been, no sooner did he distinctly perceive the white mass, than with a quick intensity he instantly gave orders for lowering.</p>
+        <a class="button button--try" href="#">Try it 30 days for free</a>
+      </p>
+    </section>
+  </div>
+</div>
+
+<!-- Footer 
+************************************************** -->
+<div class="row-wrapper">
+  <div class="outer-container">
+    <footer>&copy; 2015 <a href="#">Trending Virtual</a></footer>
+  </div>
+</div>
+  
+</body>
 </html>
