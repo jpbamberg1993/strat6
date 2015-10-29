@@ -3,16 +3,7 @@
 @import 'base/grid-settings.scss';
 @import 'neat/neat.scss';
 @import 'base/base.scss';
-@import 'layout.scss';
-
-/***** Custom Mixins *****/
 @import "base/mixins";
-
-/***** Custom Layout Styles *****/
 @import "layout";
-@charset "UTF-8";
-
-/***** Custom Style *****/
-@import "forms"; // Gives buttons styles
 @import "mixins";
 @import "welcome";

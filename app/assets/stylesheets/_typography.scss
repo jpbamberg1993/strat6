@@ -1,0 +1,66 @@
+body {
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #594C4F;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 3em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 2px 0 20px; }
+
+h2,
+h3 {
+  font-size: 1.75em;
+  margin: 2px 0 10px; }
+
+h3 {
+  color: #E3857D;
+  text-transform: none; }
+
+h5 {
+  color: #E3857D;
+  font-size: 1.125em;
+  margin: 0 0 8px 0; }
+
+p {
+  font-size: 1.125em;
+  margin: 0 0 7px; }
+
+.meta {
+  color: #551501;
+  text-transform: uppercase;
+  opacity: 0.5; }
+  #recent-posts .meta {
+    font-size: 0.875em; }
+
+a {
+  color: #594C4F;
+  text-decoration: none;
+  transition: color 0.1s linear; }
+  a:active, a:focus, a:hover {
+    color: #A569BD; }
+  a:active, a:focus {
+    outline: none; }
+  .continue-reading a {
+    padding-right: 25px;
+    background: image-url('icon-arrow.svg') center right no-repeat; }
+
+hr {
+  border-bottom: 1px solid #551501;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
