@@ -1,9 +1,9 @@
+// import libraries and frameworks
 @import 'normalize.scss';
-@import 'bourbon/bourbon.scss';
-@import 'base/grid-settings.scss';
-@import 'neat/neat.scss';
-@import 'base/base.scss';
-@import "base/mixins";
-@import "layout";
-@import "mixins";
-@import "welcome";
+@import 'bourbon';
+@import 'base/base';
+@import 'neat';
+
+// application specific files
+@import 'layout';
+@import 'welcome';
